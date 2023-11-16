@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="reset.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- swiper-carrossel -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+        <title>Qual a Boa?</title>
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <div class="container">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu" class="container__rotulo">
+                    <span class="cabecalho__menu-hamburguer container__imagem"></span>
+                </label>
+
+                <ul class="lista__menu">
+                    <li class="lista-menu__titulo">Categorias</li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Tópicos</a></li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Meus Favoritos</a></li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Confirmados</a></li>
+                    <!-- <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Business</a></li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Design & UX</a></li> -->
+                </ul>    
+
+                <a href="#"><img class="container__imagem" src="img/Logo.png" alt="logo Qual a Boa?"></a>
+                <h1 class="container__titulo"><b class="container__titulo--negrito">Qual a </b>Boa?</h1>
+            </div>
+
+            <ul class="opcoes">
+
+                <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+                <label for="opcoes-menu" class="opcoes__rotulo">
+                    <li class="opcoes__item">Tópicos</li>
+                </label>
+
+                <ul class="lista__menu">
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Festas e Baladas</a></li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Culinária e Gastronomia</a></li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Atividades ao Ar Livre</a></li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Cultura e Entretenimento</a></li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Eventos Temáticos</a></li>
+                </ul>    
+
+                <li class="opcoes__item"><a href="#" class="opcoes__link">Meus Favoritos</a></li>
+                <li class="opcoes__item"><a href="#" class="opcoes__link">Confirmados</a></li>
+            </ul>
+
+            <div class="container">
+                <a href="#" class="container__link">
+                    <img class="container__imagem container__imagem--coracao" src="img/Favoritos.svg" alt="Meus favoritos"></a>
+                <a href="#" class="container__link">
+                    <img class="container__imagem" src="img/Compras.svg" alt="Carrinho de compras">
+                    <p class="container__texto">Já confirmados</p>
+                </a>
+                <a href="#" class="container__link">
+                    <img class="container__imagem" src="img/Usuario.svg" alt="meu perfil">
+                    <p class="container__texto">Meu perfil</p>
+                </a>
+            </div>
+        </header>
+
+        <section class="banner">
+            <h2 class="banner__titulo">Tá precisando de um bom rolê para ir?</h2>
+            <p class="banner__texto">Qual a boa é o aplicativo ideal para você que procura festivais, shows e rolês em um só lugar!</p>
+            <input type="search" class="banner__pesquisa" placeholder="Qual a Boa de hoje?">
+        </section>
+
+        <!-- 1º carrosel -->
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Eventos que possam te interessar</h2>
+
+            <!-- Slider main container -->
+            <div class="carrossel__container">
+                
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/Eventos/Festa1.png" alt="Imagem de festa"></div>
+                        <div class="swiper-slide"><img src="img/Eventos/Festa10.png" alt="Imagem de festa"></div>
+                        <div class="swiper-slide"><img src="img/Eventos/Festa4.png" alt="Imagem de festa"></div>
+                        <div class="swiper-slide"><img src="img/Eventos/Festa5.png" alt="Imagem de festa"></div>
+                        <div class="swiper-slide"><img src="img/Eventos/Festa9.png" alt="Imagem de festa"></div>
+                        <div class="swiper-slide"><img src="img/Eventos/Festa12.png" alt="Imagem de festa"></div>
+                    </div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                
+                <div class="card">
+                <!-- 1ª linha -->
+                    <div class="card__descricao">
+                        <!-- 1ª coluna -->
+                        <div class="descricao">
+                            <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                            <h2 class="descricao__titulo-livro">Coldplay Music of The Spheres</h2>
+                            <p class="descricao__texto">Uma turnê que proporciona uma experiência musical e visual deslumbrante.</p>
+                        </div>
+                        <!-- 2ª coluna -->
+                        <img src="img/EventoDestaque.png" alt="imagem Evento Destaque" class="descricao__imagem">
+                    </div>
+                    <!-- 2ª linha -->
+                    <div class="card__botoes">
+                        <!-- 1ª coluna -->
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="img/Favoritos.svg" alt="favoritos"></li>
+                            <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar no carrinho"></li>
+                        </ul>
+                        <!-- 2ª coluna -->
+                        <a class="botoes__ancora" href="#">Ver mais...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2º carrosel -->
+        <section class="carrossel"> 
+            <h2 class="carrossel__titulo">Em Destaque</h2>
+
+            <!-- Slider main container -->
+            <div class="carrossel__container">
+                
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/Eventos/Festa11.png" alt="Imagem de festa"></div>
+                        <div class="swiper-slide"><img src="img/Eventos/Festa2.png" alt="Imagem de festa"></div>
+                        <div class="swiper-slide"><img src="img/Eventos/Festa7.png" alt="Imagem de festa"></div>
+                        <div class="swiper-slide"><img src="img/Eventos/Festa3.png" alt="Imagem de festa"></div>
+                        <div class="swiper-slide"><img src="img/Eventos/Festa6.png" alt="Imagem de festa"></div>
+                        <div class="swiper-slide"><img src="img/Eventos/Festa8.png" alt="Imagem de festa"></div>
+                    </div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="card">
+                <!-- 1ª linha -->
+                    <div class="card__descricao">
+                        <!-- 1ª coluna -->
+                        <div class="descricao">
+                            <img class="estrelinhas" src="img/Estrelinhas.svg" alt="">
+                            <h3 class="descricao__titulo">Melhor do Mês</h3>
+                            <h2 class="descricao__titulo-livro">CENA FESTIVAL</h2>
+                            <p class="descricao__texto">Trazendo grandes nomes da cena do trap e rap desde 2019 o festival CENA foi o melhor avaliado desse mês. </p>
+                        </div>
+                        <!-- 2ª coluna -->
+                        <img src="img/EventoDoMes.png" alt="imagem CENA" class="descricao__imagem">
+                    </div>
+                    <!-- 2ª linha -->
+                    <div class="card__botoes">
+                        <!-- 1ª coluna -->
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="img/Favoritos.svg" alt="favoritos"></li>
+                            <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar no carrinho"></li>
+                        </ul>
+                        <!-- 2ª coluna -->
+                        <a class="botoes__ancora" href="#">Saiba mais</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="topicos">
+            <h2 class="topicos__titulo">Tópicos visitados recentemente</h2>
+            <ul class="topicos__lista">
+                <li class="topicos__item"><a class="topicos__link" href="#">Atividades ao Ar Livre</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">Dança</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">Promoções e Descontos</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">Esportivos</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">Stand Ups Comedy</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">Culinária</a></li>
+                <!-- <li class="topicos__item"><a class="topicos__link" href="#">Karaoke</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">Exposições </a></li> -->
+            </ul>
+        </section>
+
+        <section class="contato">
+            <div class="contato__descricao">
+                <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+                <p class="contato__texto">Atualizações de novos eventos e promoções.</p>
+            </div>
+                <input type="email" class="contato__email" placeholder="Cadastre seu e-mail">
+        </section>
+
+        <footer class="rodape">
+            <h2 class="rodape__titulo">Grupo de Banco de Dados</h2>
+            <ul class="lista__rodape">
+                <li class="lista__rodape-titulo">Participantes</li>
+                <li class="lista__rodape-item">
+                    <a class="lista__rodape-link" href="#">Samuel Melo RA:740993</a>
+                </li>
+                <li class="lista__rodape-item">
+                    <a class="lista__rodape-link" href="#">Gustavo Senna RA:742759</a>
+                </li>
+                <li class="lista__rodape-item">
+                    <a class="lista__rodape-link" href="#">Renan Bispo RA:740801</a>
+                </li>
+                <li class="lista__rodape-item">
+                    <a class="lista__rodape-link" href="#">Verônica Macedo RA:740509</a>
+                </li>
+                <li class="lista__rodape-item">
+                    <a class="lista__rodape-link" href="#">Yasmin Butini RA:741501</a>
+                </li>
+            </ul>
+            
+            <ul class="lista__rodape">
+                <li class="lista__rodape-titulo">Nossos Contatos</li>
+                <li class="lista__rodape-item">
+                    <img src="img/email.svg" alt="logo email">
+                    <a class="lista__rodape-link" href="#">Email</a>
+            </ul>
+    
+            <ul class="lista__rodape">
+                <li class="lista__rodape-titulo">Comunidade</li>
+                <li class="lista__rodape-item">
+                    <a class="lista__rodape-link" href="#">Faça parte da comunidade "Qual a Boa?"</a>
+                </li>
+            </ul>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView:3,
+
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+
+          });
+        </script>
+    </body>
+</html>
